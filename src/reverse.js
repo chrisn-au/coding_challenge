@@ -6,15 +6,13 @@ const reverseSentence = (sentence, reverseWords, reverseLetters) => {
   if (typeof(reverseWords) != "boolean") reverseWords = false
   if (typeof(reverseLetters) != "boolean") reverseLetters = false
 
-  let result = sentence
-
   if (reverseWords) 
-        result = reverseWordsOrder(result)
+        sentence = reverseWordsOrder(sentence)
 
   if (reverseLetters)
-        result = reverseLettersOrder(result)   
+        sentence = reverseLettersOrder(sentence)   
   
-  return result;
+  return sentence;
 }
 
 

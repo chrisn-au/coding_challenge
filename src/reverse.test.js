@@ -25,12 +25,12 @@ test('reverse both should do everything', () => {
     .toBe('ecnetnes a si siht')
 });
 
-test('test of passing a number', () => {
+test('passing a number - not a string', () => {
   expect(reverse.reverseSentence(5, true, true))
     .toBe(5)
 });
 
-test('test of not passing parameters correctly', () => {
+test('passing boolean parameters incorrectly correctly', () => {
   expect(reverse.reverseSentence("A simple string", "true", false))
     .toBe("A simple string")
 });
