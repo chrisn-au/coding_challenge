@@ -15,7 +15,6 @@ const reverseSentence = (sentence, reverseWords, reverseLetters) => {
   return sentence;
 }
 
-
 function reverseWordsOrder(sentence) {
     return reverseString(sentence, SPACE)
 }
@@ -32,7 +31,9 @@ function reverseLettersOrder(sentence) {
 function reverseString(rev, seperator){
      // split string into array based on sperator
      // use JS reverse() function to reverse the array  
-     return  rev.split(seperator).reverse().join(seperator)
+     return  rev.split(seperator)   //tokenise based on seperator
+                .reverse()          //reverse the array using array native function
+                .join(seperator)    //reassemble the array to a string
 }
 
 module.exports =
