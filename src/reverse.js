@@ -21,11 +21,11 @@ function reverseWordsOrder(sentence) {
 
 function reverseLettersOrder(sentence) {
   //split sentence into array of words
-  let words = sentence.split(SPACE)
+  let words = sentence.split(SPACE) //break the sentence in words using the " " as the delimiter
   for (let i = 0; i < words.length; i++){
-    words[i] = reverseString(words[i], NO_SPACE)
+    words[i] = reverseString(words[i], NO_SPACE)  // for each word reverse the characters
   }
-  return words.join(SPACE)
+  return words.join(SPACE)  //reassamble the array to a string
 }
 
 function reverseString(rev, seperator){
