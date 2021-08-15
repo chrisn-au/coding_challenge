@@ -30,7 +30,7 @@ test('passing a number - not a string', () => {
     .toBe(5)
 });
 
-test('passing boolean parameters incorrectly correctly', () => {
+test('passing boolean parameters incorrectly', () => {
   expect(reverse.reverseSentence("A simple string", "true", false))
     .toBe("A simple string")
 });
